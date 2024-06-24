@@ -1,0 +1,1 @@
+This application is aimed to do mindful meal planning for a family, which helps to reduce waste also saves money. Initially user can add items/ leftovers in the home using search grocery api and then buy rest of the items for meal plan
