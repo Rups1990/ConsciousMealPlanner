@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141B63262C29487E00FD0383 /* ProductDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141B63252C29487E00FD0383 /* ProductDetailCell.swift */; };
+		141B632A2C296B3E00FD0383 /* MockSearchGroceriesResult.json in Resources */ = {isa = PBXBuildFile; fileRef = 141B63292C296B3E00FD0383 /* MockSearchGroceriesResult.json */; };
 		148B51DE2C285AA500DB4C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B51DD2C285AA500DB4C3C /* AppDelegate.swift */; };
 		148B51E02C285AA500DB4C3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B51DF2C285AA500DB4C3C /* SceneDelegate.swift */; };
 		148B51E22C285AA500DB4C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B51E12C285AA500DB4C3C /* ViewController.swift */; };
@@ -14,9 +16,14 @@
 		148B51E82C285AA500DB4C3C /* ConsciousMealPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 148B51E62C285AA500DB4C3C /* ConsciousMealPlanner.xcdatamodeld */; };
 		148B51EA2C285AA600DB4C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148B51E92C285AA600DB4C3C /* Assets.xcassets */; };
 		148B51ED2C285AA600DB4C3C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 148B51EC2C285AA600DB4C3C /* Base */; };
-		148B51F82C285AA600DB4C3C /* ConsciousMealPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B51F72C285AA600DB4C3C /* ConsciousMealPlannerTests.swift */; };
+		148B51F82C285AA600DB4C3C /* SearchGroceriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B51F72C285AA600DB4C3C /* SearchGroceriesViewModelTests.swift */; };
 		148B52022C285AA600DB4C3C /* ConsciousMealPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B52012C285AA600DB4C3C /* ConsciousMealPlannerUITests.swift */; };
 		148B52042C285AA600DB4C3C /* ConsciousMealPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B52032C285AA600DB4C3C /* ConsciousMealPlannerUITestsLaunchTests.swift */; };
+		148B52112C287FC200DB4C3C /* SearchGroceriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B52102C287FC200DB4C3C /* SearchGroceriesViewController.swift */; };
+		148B52132C287FD700DB4C3C /* ReceipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B52122C287FD700DB4C3C /* ReceipesViewController.swift */; };
+		148B52152C28839400DB4C3C /* SearchGroceriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B52142C28839400DB4C3C /* SearchGroceriesViewModel.swift */; };
+		148B52172C28854D00DB4C3C /* SearchGroceryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B52162C28854D00DB4C3C /* SearchGroceryService.swift */; };
+		148B521B2C288FB500DB4C3C /* GroceryProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B52192C288FB500DB4C3C /* GroceryProducts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141B63252C29487E00FD0383 /* ProductDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailCell.swift; sourceTree = "<group>"; };
+		141B63282C29672000FD0383 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		141B63292C296B3E00FD0383 /* MockSearchGroceriesResult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockSearchGroceriesResult.json; sourceTree = "<group>"; };
 		148B51DA2C285AA500DB4C3C /* ConsciousMealPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsciousMealPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148B51DD2C285AA500DB4C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		148B51DF2C285AA500DB4C3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,10 +57,15 @@
 		148B51EC2C285AA600DB4C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		148B51EE2C285AA600DB4C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		148B51F32C285AA600DB4C3C /* ConsciousMealPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConsciousMealPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		148B51F72C285AA600DB4C3C /* ConsciousMealPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsciousMealPlannerTests.swift; sourceTree = "<group>"; };
+		148B51F72C285AA600DB4C3C /* SearchGroceriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroceriesViewModelTests.swift; sourceTree = "<group>"; };
 		148B51FD2C285AA600DB4C3C /* ConsciousMealPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConsciousMealPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		148B52012C285AA600DB4C3C /* ConsciousMealPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsciousMealPlannerUITests.swift; sourceTree = "<group>"; };
 		148B52032C285AA600DB4C3C /* ConsciousMealPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsciousMealPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		148B52102C287FC200DB4C3C /* SearchGroceriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroceriesViewController.swift; sourceTree = "<group>"; };
+		148B52122C287FD700DB4C3C /* ReceipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipesViewController.swift; sourceTree = "<group>"; };
+		148B52142C28839400DB4C3C /* SearchGroceriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroceriesViewModel.swift; sourceTree = "<group>"; };
+		148B52162C28854D00DB4C3C /* SearchGroceryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroceryService.swift; sourceTree = "<group>"; };
+		148B52192C288FB500DB4C3C /* GroceryProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryProducts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +93,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141B631A2C29468E00FD0383 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				141B631D2C2946D200FD0383 /* Recipes */,
+				141B631C2C2946C700FD0383 /* SearchGroceries */,
+				141B631B2C2946B400FD0383 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		141B631B2C2946B400FD0383 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				141B63232C29471100FD0383 /* ViewModel */,
+				141B63222C29470C00FD0383 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		141B631C2C2946C700FD0383 /* SearchGroceries */ = {
+			isa = PBXGroup;
+			children = (
+				141B63242C2947D600FD0383 /* Model */,
+				141B631F2C2946F200FD0383 /* View */,
+				141B631E2C2946E500FD0383 /* ViewModel */,
+			);
+			path = SearchGroceries;
+			sourceTree = "<group>";
+		};
+		141B631D2C2946D200FD0383 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				141B63212C29470300FD0383 /* ViewModel */,
+				141B63202C2946FD00FD0383 /* View */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		141B631E2C2946E500FD0383 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				148B52142C28839400DB4C3C /* SearchGroceriesViewModel.swift */,
+				148B52162C28854D00DB4C3C /* SearchGroceryService.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		141B631F2C2946F200FD0383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				148B52102C287FC200DB4C3C /* SearchGroceriesViewController.swift */,
+				141B63252C29487E00FD0383 /* ProductDetailCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		141B63202C2946FD00FD0383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		141B63212C29470300FD0383 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				148B52122C287FD700DB4C3C /* ReceipesViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		141B63222C29470C00FD0383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				148B51E12C285AA500DB4C3C /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		141B63232C29471100FD0383 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		141B63242C2947D600FD0383 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				148B52192C288FB500DB4C3C /* GroceryProducts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		148B51D12C285AA500DB4C3C = {
 			isa = PBXGroup;
 			children = (
+				141B63282C29672000FD0383 /* Config.xcconfig */,
+				141B63292C296B3E00FD0383 /* MockSearchGroceriesResult.json */,
 				148B51DC2C285AA500DB4C3C /* ConsciousMealPlanner */,
 				148B51F62C285AA600DB4C3C /* ConsciousMealPlannerTests */,
 				148B52002C285AA600DB4C3C /* ConsciousMealPlannerUITests */,
@@ -101,9 +212,10 @@
 		148B51DC2C285AA500DB4C3C /* ConsciousMealPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				141B631A2C29468E00FD0383 /* Features */,
+				148B52182C288F8500DB4C3C /* Models */,
 				148B51DD2C285AA500DB4C3C /* AppDelegate.swift */,
 				148B51DF2C285AA500DB4C3C /* SceneDelegate.swift */,
-				148B51E12C285AA500DB4C3C /* ViewController.swift */,
 				148B51E32C285AA500DB4C3C /* Main.storyboard */,
 				148B51E92C285AA600DB4C3C /* Assets.xcassets */,
 				148B51EB2C285AA600DB4C3C /* LaunchScreen.storyboard */,
@@ -116,7 +228,7 @@
 		148B51F62C285AA600DB4C3C /* ConsciousMealPlannerTests */ = {
 			isa = PBXGroup;
 			children = (
-				148B51F72C285AA600DB4C3C /* ConsciousMealPlannerTests.swift */,
+				148B51F72C285AA600DB4C3C /* SearchGroceriesViewModelTests.swift */,
 			);
 			path = ConsciousMealPlannerTests;
 			sourceTree = "<group>";
@@ -128,6 +240,13 @@
 				148B52032C285AA600DB4C3C /* ConsciousMealPlannerUITestsLaunchTests.swift */,
 			);
 			path = ConsciousMealPlannerUITests;
+			sourceTree = "<group>";
+		};
+		148B52182C288F8500DB4C3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141B632A2C296B3E00FD0383 /* MockSearchGroceriesResult.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +381,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141B63262C29487E00FD0383 /* ProductDetailCell.swift in Sources */,
+				148B52112C287FC200DB4C3C /* SearchGroceriesViewController.swift in Sources */,
 				148B51E22C285AA500DB4C3C /* ViewController.swift in Sources */,
 				148B51DE2C285AA500DB4C3C /* AppDelegate.swift in Sources */,
 				148B51E82C285AA500DB4C3C /* ConsciousMealPlanner.xcdatamodeld in Sources */,
+				148B52132C287FD700DB4C3C /* ReceipesViewController.swift in Sources */,
+				148B52152C28839400DB4C3C /* SearchGroceriesViewModel.swift in Sources */,
+				148B521B2C288FB500DB4C3C /* GroceryProducts.swift in Sources */,
 				148B51E02C285AA500DB4C3C /* SceneDelegate.swift in Sources */,
+				148B52172C28854D00DB4C3C /* SearchGroceryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				148B51F82C285AA600DB4C3C /* ConsciousMealPlannerTests.swift in Sources */,
+				148B51F82C285AA600DB4C3C /* SearchGroceriesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +448,7 @@
 /* Begin XCBuildConfiguration section */
 		148B52052C285AA600DB4C3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 141B63282C29672000FD0383 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

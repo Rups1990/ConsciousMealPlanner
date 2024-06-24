@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 192386,
+      "title": "Pizza Buddy: Frozen Pizza Dough, 16 Oz",
+      "imageType": "jpg"
+    },
+    {
+      "id": 27693,
+      "title": "Uno Pizza",
+      "imageType": "jpg"
+    }
+  ],
+  "totalProducts": 1258,
+  "type": "product",
+  "offset": 0,
+  "number": 2
+}
